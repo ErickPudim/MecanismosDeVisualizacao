@@ -4,4 +4,13 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    h1 Bem vindos ao nosso site
+    h1(style='border-bottom: solid black 2px; border-radius: 2px;') Esta é a página sobre #{title}
+    a(href='/' style='margin: 2px') index
+    a(href='/users' style='margin: 2px') usuários
+    a(href='/admin' style='margin: 2px') admin1
+    a(href='/users/admin' style='margin: 2px') admin2
+    a(href='/extra' style='margin: 2px') extra
+    br
+
     block content
